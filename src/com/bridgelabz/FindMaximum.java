@@ -1,31 +1,31 @@
-//Given 3 Integers find the maximum
+//Given 3 Floats find the maximum
 
 package com.bridgelabz;
 
 public class FindMaximum
 {
-    Integer firstNumber = 20;
-    Integer secondNumber = 5;
-    Integer threedNumber = 12;
+    Float firstNumber = 20.2F;
+    Float secondNumber = 5.5F;
+    Float threedNumber = 12.1F;
 
 
-    Integer test1(){
+    Float test1(){
 
-        Integer max1 = firstNumber.compareTo(secondNumber);//1
-        Integer max2 = firstNumber.compareTo(threedNumber);//1
-        Integer res1 = max1+max2;
+        Float max1 = Float.valueOf(firstNumber.compareTo(secondNumber));//1
+        Float max2 = Float.valueOf(firstNumber.compareTo(threedNumber));//1
+        Float res1 = max1+max2;
         return res1;//2
     }
-    Integer test2(){
-        Integer max1 = secondNumber.compareTo(firstNumber);//-1
-        Integer max2 = secondNumber.compareTo(threedNumber);//1
-        Integer res2 = max1+max2;
+    Float test2(){
+        Float max1 = Float.valueOf(secondNumber.compareTo(firstNumber));//-1
+        Float max2 = Float.valueOf(secondNumber.compareTo(threedNumber));//1
+        Float res2 = max1+max2;
         return res2;
     }
-    Integer test3(){
-        Integer max1 = threedNumber.compareTo(firstNumber);//-1
-        Integer max2 = threedNumber.compareTo(secondNumber);//-1
-        Integer res3 = max1+max2;
+    Float test3(){
+        Float max1 = Float.valueOf(threedNumber.compareTo(firstNumber));//-1
+        Float max2 = Float.valueOf(threedNumber.compareTo(secondNumber));//-1
+        Float res3 = max1+max2;
         return res3;
     }
 
@@ -33,9 +33,9 @@ public class FindMaximum
     public static void main(String[] args)
     {
         FindMaximum max = new FindMaximum();
-        int one = max.test1();
-        int two = max.test2();
-        int three = max.test3();
+        Float one = max.test1();
+        Float two = max.test2();
+        Float three = max.test3();
         if (one == 2)
             System.out.println("first greatest number : "+max.firstNumber);
         else if (one == -2)
