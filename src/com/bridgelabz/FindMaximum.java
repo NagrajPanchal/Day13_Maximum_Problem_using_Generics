@@ -1,3 +1,5 @@
+//Given 3 Integers find the maximum
+
 package com.bridgelabz;
 
 public class FindMaximum
