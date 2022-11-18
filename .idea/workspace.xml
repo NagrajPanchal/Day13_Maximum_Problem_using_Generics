@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fd29592-3384-410a-8c87-af793c6645dc" name="Changes" comment="Added : 3 maximum Floats Test Case 1,2,3">
+    <list default="true" id="8fd29592-3384-410a-8c87-af793c6645dc" name="Changes" comment="Added : 3 maximum Strings">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/FindMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/FindMaximum.java" afterDir="false" />
     </list>
@@ -20,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="UC2-3Floats_Find_Maximum" />
+        <entry key="$PROJECT_DIR$" value="UC3-3Strings_Find_Maximum" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -98,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666977908148</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added : 3 maximum Strings">
+      <created>1668787220556</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1668787220556</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -116,6 +123,7 @@
     <MESSAGE value="Added : Find maximum Integer" />
     <MESSAGE value="Added : 3 maximum Integer Test Case 1,2,3" />
     <MESSAGE value="Added : 3 maximum Floats Test Case 1,2,3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added : 3 maximum Floats Test Case 1,2,3" />
+    <MESSAGE value="Added : 3 maximum Strings" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added : 3 maximum Strings" />
   </component>
 </project>

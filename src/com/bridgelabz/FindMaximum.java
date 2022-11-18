@@ -1,23 +1,23 @@
-//Given 3 Strings find the maximum
+//Refactor1 3 to One Generic Method and find the maximum
 
 package com.bridgelabz;
 
 public class FindMaximum
 {
-static String toFindMaximum(String[] stringArray)
+public static <T extends Comparable<T>> void toFindMaximum(T... array)
 {
-    String max = stringArray[0];
-    for(int i=0; i<stringArray.length; i++)
+    T max = array[0];
+    for(int i=0; i<array.length; i++)
     {
-        if(stringArray[i].compareTo(max)>0)
-            max = stringArray[i];
+        if(array[i].compareTo(max)>0)
+            max = array[i];
     }
-    return max;
+    System.out.println("The maximum value is : " + max);
 }
     public static void main(String[] args)
     {
-    String[] stringArray = {"Apple", "Peach", "Banana"};
-    String result = toFindMaximum(stringArray);
-    System.out.println("Maximum String is : "+result);
+        toFindMaximum(12,22,14);
+        toFindMaximum(12.1F,13.2F,34.4F);
+        toFindMaximum("Apple", "Peach", "Banana");
     }
 }
