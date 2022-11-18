@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fd29592-3384-410a-8c87-af793c6645dc" name="Changes" comment="Added : 3 maximum Integer Test Case 1,2,3">
+    <list default="true" id="8fd29592-3384-410a-8c87-af793c6645dc" name="Changes" comment="Added : 3 maximum Floats Test Case 1,2,3">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/FindMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/FindMaximum.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="UC1-3Integer_Find_Maximum" />
+        <entry key="$PROJECT_DIR$" value="UC2-3Floats_Find_Maximum" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -40,6 +41,26 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/user/Desktop/bridgelabz/Practice-batch205&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="FindMaximum" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.bridgelabz.FindMaximum" />
+      <module name="Day13_Maximum_problem_using_Generics" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.bridgelabz.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FindMaximum" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -70,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666977533810</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Added : 3 maximum Floats Test Case 1,2,3">
+      <created>1666977908148</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1666977908148</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -87,6 +115,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added : Find maximum Integer" />
     <MESSAGE value="Added : 3 maximum Integer Test Case 1,2,3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added : 3 maximum Integer Test Case 1,2,3" />
+    <MESSAGE value="Added : 3 maximum Floats Test Case 1,2,3" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added : 3 maximum Floats Test Case 1,2,3" />
   </component>
 </project>
