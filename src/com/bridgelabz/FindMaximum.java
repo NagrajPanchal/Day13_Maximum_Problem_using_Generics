@@ -1,49 +1,47 @@
-//Refactor2 Generic Class to take in 3 variables of Generic Type
+//UC5- max method to also print the max to std out using Generic Method
 
 package com.bridgelabz;
 
-import java.util.Scanner;
+import java.util.Arrays;
 
 public class FindMaximum<T extends Comparable<T>> {
-    T[] a;
+    T[] inputarray;
 
-    public FindMaximum(T... a) {
-        this.a = a;
+    public FindMaximum(T[] inputarray) {
+        this.inputarray =inputarray ;
 
     }
+    public void printMax(){
 
-    public T maximum() {
-        return FindMaximum.maximum(a);
+        FindMaximum.printMax(this.inputarray);
     }
 
-    public static <T extends Comparable<T>> T maximum(T... a) {
-        T max = a[0];
-
-        for (int i = 1; i < a.length; i++) {
-            if (a[i].compareTo(max) > 0) {
-                max = a[i];
-            }
+    public static <T> void printMax(T[] inputarray) {
+        for (T elements : inputarray){
+            System.out.printf("%s" ,  elements + ",");
         }
-        printMax(a, max);
-        return max;
-    }
+        System.out.println();
 
-    private static <T> void printMax(T a, T max) {
 
-        System.out.println("Maximum value is " + max);
+        Arrays.sort(inputarray);
+
+        System.out.println("Max value of the Inputs is : " + inputarray[inputarray.length-1]);
+
     }
 
     public static void main(String[] args) {
-        Integer xint = 2, yint = 6, zint = 5, bint = 7, cint = 9;
 
-        Character xchar = 'a', ychar = 'b', zchar = 'd', cchar = 't', dchar = 'f';
+        Integer[] intarray = {2,5,4,6,8,9,10} ;
 
-        Float xfloat = 2.5f, yfloat = 5.6f, zfloat = 6.9f, afloat = 10.4f, bfloat = 6.9f;
+        Character[] chararray = {'a','b','d','u','t' ,'f'}  ;
 
-        new FindMaximum(xint, yint, zint, bint, cint).maximum();
+        Float[] floatarray = {2.5f, 5.6f, 6.9f , 10.4f , 6.9f} ;
 
-        new FindMaximum(xchar, ychar, zchar, cchar, dchar).maximum();
+        new FindMaximum(intarray).printMax();
 
-        new FindMaximum(xfloat, yfloat, zfloat, afloat, bfloat).maximum();
+        new FindMaximum(chararray).printMax();
+
+        new FindMaximum(floatarray).printMax();
+
     }
 }
