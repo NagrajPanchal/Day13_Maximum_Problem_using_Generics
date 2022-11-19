@@ -12,16 +12,6 @@ public class FindMaximum<T extends Comparable<T>>
         this.second = second;
         this.third = third;
     }
-
-    @Override
-    public String toString() {
-        return "FindMaximum{" +
-                "first=" + first +
-                ", second=" + second +
-                ", third=" + third +
-                '}';
-    }
-
     private static <T extends Comparable<T>> T maximum(T first, T second, T third)
     {
         T max = first;
