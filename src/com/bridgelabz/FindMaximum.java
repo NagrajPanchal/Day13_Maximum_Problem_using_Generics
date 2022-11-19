@@ -1,23 +1,49 @@
-//Refactor1 3 to One Generic Method and find the maximum
+//Refactor2 Generic Class to take in 3 variables of Generic Type
 
 package com.bridgelabz;
 
-public class FindMaximum
+public class FindMaximum<T extends Comparable<T>>
 {
-public static <T extends Comparable<T>> void toFindMaximum(T... array)
-{
-    T max = array[0];
-    for(int i=0; i<array.length; i++)
+    T first,second,third;
+
+    public FindMaximum(T first, T second, T third)
     {
-        if(array[i].compareTo(max)>0)
-            max = array[i];
+        this.first = first;
+        this.second = second;
+        this.third = third;
     }
-    System.out.println("The maximum value is : " + max);
-}
+
+    @Override
+    public String toString() {
+        return "FindMaximum{" +
+                "first=" + first +
+                ", second=" + second +
+                ", third=" + third +
+                '}';
+    }
+
+    private static <T extends Comparable<T>> T maximum(T first, T second, T third)
+    {
+        T max = first;
+        if(second.compareTo(max)>0)
+            max= second;
+        if(third.compareTo(max)>0)
+            max = third;
+        return max;
+    }
+    private static <T> void printmax(T max) {
+
+        System.out.println("Maximum value is :" + max);
+    }
     public static void main(String[] args)
     {
-        toFindMaximum(12,22,14);
-        toFindMaximum(12.1F,13.2F,34.4F);
-        toFindMaximum("Apple", "Peach", "Banana");
+        Integer intFirst = 14, intSecond = 21, intThird = 12;
+        Float floatFirst = 1.2f, floatSecond = 12.1f, floatThird = 23.5f;
+        String stringFirst = "Apple", stringSecond = "Peach", stringThird = "Banana";
+        System.out.println("Maximum value is : "+maximum(intFirst,intSecond,intThird));
+        printmax(maximum(12.1f,13.3f,14.2f));
+        Float floatArray = maximum(floatFirst,floatSecond,floatThird);
+        printmax(floatArray);
+        printmax(maximum(stringFirst,stringSecond,stringThird));
     }
 }
