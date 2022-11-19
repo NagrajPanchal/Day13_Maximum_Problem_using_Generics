@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8fd29592-3384-410a-8c87-af793c6645dc" name="Changes" comment="Refactor1 3 to One Generic Method and find the maximum">
+    <list default="true" id="8fd29592-3384-410a-8c87-af793c6645dc" name="Changes" comment="Refactor2 Generic Class to take in 3 variables of Generic Type">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/com/bridgelabz/FindMaximum.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/bridgelabz/FindMaximum.java" afterDir="false" />
     </list>
@@ -20,7 +20,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Refactor1-3_to_One_Generic_Method" />
+        <entry key="$PROJECT_DIR$" value="Refactor2-Generic_class_in_3_variables_in_generic" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -112,7 +112,21 @@
       <option name="project" value="LOCAL" />
       <updated>1668788459951</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Refactor2 Generic Class to take in 3 variables of Generic Type">
+      <created>1668830701890</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1668830701890</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Refactor2 Generic Class to take in 3 variables of Generic Type">
+      <created>1668830874539</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1668830874539</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -132,6 +146,7 @@
     <MESSAGE value="Added : 3 maximum Floats Test Case 1,2,3" />
     <MESSAGE value="Added : 3 maximum Strings" />
     <MESSAGE value="Refactor1 3 to One Generic Method and find the maximum" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactor1 3 to One Generic Method and find the maximum" />
+    <MESSAGE value="Refactor2 Generic Class to take in 3 variables of Generic Type" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactor2 Generic Class to take in 3 variables of Generic Type" />
   </component>
 </project>

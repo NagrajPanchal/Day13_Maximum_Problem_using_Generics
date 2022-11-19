@@ -2,38 +2,48 @@
 
 package com.bridgelabz;
 
-public class FindMaximum<T extends Comparable<T>>
-{
-    T first,second,third;
+import java.util.Scanner;
 
-    public FindMaximum(T first, T second, T third)
-    {
-        this.first = first;
-        this.second = second;
-        this.third = third;
+public class FindMaximum<T extends Comparable<T>> {
+    T[] a;
+
+    public FindMaximum(T... a) {
+        this.a = a;
+
     }
-    private static <T extends Comparable<T>> T maximum(T first, T second, T third)
-    {
-        T max = first;
-        if(second.compareTo(max)>0)
-            max= second;
-        if(third.compareTo(max)>0)
-            max = third;
+
+    public T maximum() {
+        return FindMaximum.maximum(a);
+    }
+
+    public static <T extends Comparable<T>> T maximum(T... a) {
+        T max = a[0];
+
+        for (int i = 1; i < a.length; i++) {
+            if (a[i].compareTo(max) > 0) {
+                max = a[i];
+            }
+        }
+        printMax(a, max);
         return max;
     }
-    private static <T> void printmax(T max) {
 
-        System.out.println("Maximum value is :" + max);
+    private static <T> void printMax(T a, T max) {
+
+        System.out.println("Maximum value is " + max);
     }
-    public static void main(String[] args)
-    {
-        Integer intFirst = 14, intSecond = 21, intThird = 12;
-        Float floatFirst = 1.2f, floatSecond = 12.1f, floatThird = 23.5f;
-        String stringFirst = "Apple", stringSecond = "Peach", stringThird = "Banana";
-        System.out.println("Maximum value is : "+maximum(intFirst,intSecond,intThird));
-        printmax(maximum(12.1f,13.3f,14.2f));
-        Float floatArray = maximum(floatFirst,floatSecond,floatThird);
-        printmax(floatArray);
-        printmax(maximum(stringFirst,stringSecond,stringThird));
+
+    public static void main(String[] args) {
+        Integer xint = 2, yint = 6, zint = 5, bint = 7, cint = 9;
+
+        Character xchar = 'a', ychar = 'b', zchar = 'd', cchar = 't', dchar = 'f';
+
+        Float xfloat = 2.5f, yfloat = 5.6f, zfloat = 6.9f, afloat = 10.4f, bfloat = 6.9f;
+
+        new FindMaximum(xint, yint, zint, bint, cint).maximum();
+
+        new FindMaximum(xchar, ychar, zchar, cchar, dchar).maximum();
+
+        new FindMaximum(xfloat, yfloat, zfloat, afloat, bfloat).maximum();
     }
 }
